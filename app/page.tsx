@@ -1,11 +1,22 @@
 import { CodeEditorWrapper } from "@/components/code-editor";
-import { HeaderComponent } from "@/components/header";
+
+import Header from "@/components/header"; // Adjust the path if necessary
 
 export default function Home() {
   return (
-    <>
-      <HeaderComponent />
+    <div>
+      <Header />
       <CodeEditorWrapper />
-    </>
+    </div>
   );
 }
+
+//import { Header } from "@/components/header";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <CodeEditorWrapper />
+//     </>
+//   );
+// }
