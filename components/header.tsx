@@ -79,15 +79,15 @@ export function Header() {
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={toggleSidebar}
             >
-              About
+              About CodeScanner
             </Link>
-            <Link
+            {/* <Link
               href="/"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={toggleSidebar}
             >
               Home
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </div>

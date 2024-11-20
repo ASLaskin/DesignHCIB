@@ -17,6 +17,10 @@ const predefinedSnippets: Record<string, string> = {
   //   return 0;
   //  }
   '#include<iostream>\nint main(){\n std::cout << "hello world";\n return 0;\n}': "This prints hello world in C++",
+  'cout << "hello world";': "This prints hello world in C++",
+  'cout<<"hello world";': "This prints hello world in C++",
+  'cout <<"hello world";': "This prints hello world in C++",
+  'cout<< "hello world";': "This prints hello world in C++",
 
   //cout << "hello";  
   "cout << \"hello\";": "This outputs the word hello using C++ streams",

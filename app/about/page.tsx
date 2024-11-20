@@ -2,9 +2,12 @@
 
 import React from "react";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
+
 
 export default function AboutPage() {
   const { theme } = useTheme(); // Get the current theme
+  const router = useRouter(); // Initialize the router
 
   const containerStyles = {
     backgroundColor: theme === "dark" ? "#181818" : "#ffffff",
@@ -18,15 +21,13 @@ export default function AboutPage() {
     >
       <h1 className="text-3xl font-bold text-center">About CodeScanner</h1>
 
-
       <div className="flex flex-row justify-center space-x-8">
         <span className="font-medium text-lg">Andrew Laskin</span>
         <span className="font-medium text-lg">Xalan Dames</span>
-        <span className="font-medium text-lg">Ryan Machaden</span>
+        <span className="font-medium text-lg">Ryan Machado</span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
-
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Our Mission</h2>
           <p className="text-base">
@@ -49,6 +50,14 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+
+      {/* Add the back button */}
+      <button
+        onClick={() => router.push("/")} // Navigate to the main screen
+        className="px-6 py-3 mt-8 bg-black text-white rounded-lg hover:bg-gray-600"
+      >
+        Back to Main Screen
+      </button>
     </div>
   );
 }
